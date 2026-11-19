@@ -1,0 +1,23 @@
+body { margin: 0; font-family: sans-serif; }
+.layout { min-height: 100vh; display: flex; flex-direction: column; }
+.header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 24px; background: #1e293b; color: #fff; }
+.nav { display: flex; gap: 16px; }
+.nav__link { color: #cbd5e1; text-decoration: none; }
+.nav__link--active { color: #fff; font-weight: bold; border-bottom: 2px solid #38bdf8; }
+.content { flex: 1; max-width: 720px; width: 100%; margin: 0 auto; padding: 24px 16px; box-sizing: border-box; }
+.post-list { list-style: none; padding: 0; }
+.post-card { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #e2e8f0; }
+.tag { color: #0284c7; font-size: 14px; }
+.footer { padding: 12px; text-align: center; background: #f1f5f9; }
+
+.filters { display: flex; gap: 8px; margin: 12px 0; }
+.user-bar { display: flex; align-items: center; gap: 8px; }
+.loading-bar { height: 3px; background: #38bdf8; animation: loading 1s infinite; }
+@keyframes loading { from { width: 0; } to { width: 100%; } }
+
+form { display: flex; flex-direction: column; gap: 12px; max-width: 480px; }
+label { display: flex; flex-direction: column; gap: 4px; }
+input, textarea, select { padding: 6px 8px; font: inherit; }
+.error { color: #dc2626; }
+.post-actions { display: flex; gap: 12px; align-items: center; margin-top: 16px; }
+.post-actions form { display: inline; }
